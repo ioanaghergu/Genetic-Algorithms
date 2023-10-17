@@ -91,7 +91,7 @@ class Population:
     def decode(self, chromosome):
         chromosome.length = self.calculate_length(chromosome)
         d = (self.domain[1] - self.domain[0]) / pow(2, chromosome.length) # discretization increment
-        left_value = self.domain[0]  # lower bound of the dicretization interval
+        left_value = self.domain[0]  # lower bound of the discretization interval
         interval_index = 0
 
         while chromosome.value >= left_value:
